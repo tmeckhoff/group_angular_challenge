@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Group Angular Challenge</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </head>
 <body ng-controller="myController">
+<div class="container">
 
-<div ng-repeat="handle in handles">
+<div class="well col-md-6" ng-repeat="handle in handles">
 
 Your new Twitter Handle is: <a href="https://www.twitter.com/{{handle}}">@{{handle}}</a>
 </div>
-
+</div>
 </body>
 </html>
